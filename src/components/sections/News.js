@@ -49,8 +49,8 @@ class News extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Product news and updates',
-      paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consequat.'
+      title: 'About Me',
+      paragraph: 'I would love to help you with all your real estate needs!'
     };
 
     return (
@@ -63,11 +63,11 @@ class News extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content reveal-from-bottom" />
             <div className={tilesClasses}>
 
-              <div className="tiles-item reveal-from-bottom">
+              <div className="tiles-item reveal-from-bottom" id="about-me home-page">
                 <div className="tiles-item-inner has-shadow">
                   <figure className="news-item-image m-0">
                     <Image
-                      src={require('./../../assets/images/news-image-01.jpg')}
+                      src={require('./../../assets/images/PrinceGeorge.jpg')}
                       alt="News 01"
                       width={344}
                       height={194} />
@@ -75,14 +75,13 @@ class News extends React.Component {
                   <div className="news-item-content">
                     <div className="news-item-body">
                       <h3 className="news-item-title h4 mt-0 mb-8">
-                        <a href="https://cruip.com">How to build anything</a>
+                        <a href="https://cruip.com">Prince George home grown</a>
                       </h3>
                       <p className="mb-16 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                        Born and raised in Prince George, I have a deep-rooted connection to this vibrant community. 
+                        Growing up here, I've experienced firsthand the warmth, resilience, and unique charm that make our city so special. 
+                        As a real estate agent, I’m passionate about helping others find their place in this incredible town, where I’m proud to call home.
                       </p>
-                    </div>
-                    <div className="news-item-more text-xs mb-8">
-                      <a href="https://cruip.com">Read more</a>
                     </div>
                   </div>
                 </div>
@@ -92,7 +91,7 @@ class News extends React.Component {
                 <div className="tiles-item-inner has-shadow">
                   <figure className="news-item-image m-0">
                     <Image
-                      src={require('./../../assets/images/news-image-02.jpg')}
+                      src={require('./../../assets/images/honesty.jpg')}
                       alt="News 02"
                       width={344}
                       height={194} />
@@ -100,14 +99,12 @@ class News extends React.Component {
                   <div className="news-item-content">
                     <div className="news-item-body">
                       <h3 className="news-item-title h4 mt-0 mb-8">
-                        <a href="https://cruip.com">How to build anything</a>
+                        <a href="https://cruip.com">Honesty and Integrity</a>
                       </h3>
                       <p className="mb-16 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                      Integrity is the cornerstone of my real estate practice. I believe that honesty is the key to building lasting relationships and ensuring client satisfaction. 
+                      Whether you're buying or selling, I am committed to providing transparent and straightforward advice, always putting your best interests first.
                       </p>
-                    </div>
-                    <div className="news-item-more text-xs mb-8">
-                      <a href="https://cruip.com">Read more</a>
                     </div>
                   </div>
                 </div>
@@ -117,7 +114,7 @@ class News extends React.Component {
                 <div className="tiles-item-inner has-shadow">
                   <figure className="news-item-image m-0">
                     <Image
-                      src={require('./../../assets/images/news-image-03.jpg')}
+                      src={require('./../../assets/images/cycling.jpg')}
                       alt="News 03"
                       width={344}
                       height={194} />
@@ -125,14 +122,15 @@ class News extends React.Component {
                   <div className="news-item-content">
                     <div className="news-item-body">
                       <h3 className="news-item-title h4 mt-0 mb-8">
-                        <a href="https://cruip.com">How to build anything</a>
+                        <a href="https://cruip.com">Competitive cycler</a>
                       </h3>
                       <p className="mb-16 text-sm">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                      When I’m not helping clients find their dream homes, you can often find me on the trails, pushing my limits as a competitive bicyclist. 
+                      My passion for cycling goes hand in hand with my approach to real estate—both require dedication, discipline, and a drive to succeed
                       </p>
                     </div>
                     <div className="news-item-more text-xs mb-8">
-                      <a href="https://cruip.com">Read more</a>
+                      <a href="#contact-me">Contact Me</a>
                     </div>
                   </div>
                 </div>

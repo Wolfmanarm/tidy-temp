@@ -27,6 +27,17 @@
 .header-nav {
 	flex-grow: 1;
 
+	.header-dropdown{
+		padding: 20px;
+		position: relative;
+	}
+	
+	.header-dropdown-menu{
+		margin: 20px;
+		position: relative;
+	}
+
+
 	.header-nav-inner {
 		display: flex;
 		flex-grow: 1;
@@ -150,3 +161,4 @@
 		height: $header-height__desktop;
 	}
 }
+

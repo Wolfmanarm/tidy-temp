@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-	margin-right: -($tiles-items--padding__mobile / 2);
-	margin-left: -($tiles-items--padding__mobile / 2);
+	margin-right: -($tiles-items--padding__mobile / 1);
+	margin-left: -($tiles-items--padding__mobile / 1);
 	margin-top: -($tiles-items--padding__mobile / 2);
 
 	&:last-of-type {
@@ -45,6 +45,27 @@
 	flex-direction: column;
 	height: 100%;
 	padding: $tiles-item--inner-padding-v $tiles-item--inner-padding-h;
+	border-radius: 25px;
+}
+
+.tiles-item-inner h2{
+	margin: 24px;
+	color:black;	
+}
+
+.tiles-item-inner h3{
+	margin: 24px;
+	color:black;	
+}
+
+.tiles-item-inner h4{
+	margin: 24px;
+	color:black;	
+}
+
+.tiles-item-inner input{
+	margin-left: 24px;
+	margin-right: 24px;
 }
 
 @if ( $tiles-items--padding__desktop != null ) {

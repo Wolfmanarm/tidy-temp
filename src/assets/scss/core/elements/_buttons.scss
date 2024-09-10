@@ -3,6 +3,7 @@
 	@include font-size(button);
     @include font-weight(button);
 	padding: (($button-form--height - get-line-height(button) - ($button-form--border-width * 2)) / 2) ($button--padding-h - $button-form--border-width);
+	margin: 12px;
 	height: $button-form--height;
     text-decoration: none !important;
 	text-transform: $button--transform;

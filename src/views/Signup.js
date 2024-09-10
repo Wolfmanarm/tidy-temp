@@ -1,10 +1,18 @@
 import React from 'react';
 import SignupForm from '../components/sections/SignupForm';
 
+import GenericSection from '../components/sections/GenericSection';
+
 class Signup extends React.Component {
   render() {
+
+   
+
     return (
-      <SignupForm className="illustration-section-01" />
+      <React.Fragment>
+        <SignupForm hasBgColor invertColor/>
+      </React.Fragment>
+      
     );
   }
 }

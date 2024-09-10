@@ -178,8 +178,10 @@ textarea.form-input {
 
 .form-checkbox,
 .form-radio {
+	display: inline-block;
     position: relative;
-	padding-left: 24px;
+	padding-left: 48px;
+	padding-right: 24px;
 
 	input {
 		position: absolute;
@@ -188,6 +190,8 @@ textarea.form-input {
 		width: 16px;
 		height: 16px;
 		cursor: pointer;
+		margin-left: 24px;
+		margin-right: 24px;
 
 		&:checked {
 			background-color: color-bg(check-radio-checked) !important;

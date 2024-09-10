@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const propTypes = {
   active: PropTypes.bool,
@@ -55,6 +57,7 @@ class Header extends React.Component {
     this.setState({ isActive: false });
   }
 
+
   keyPress = (e) => {
     this.state.isActive && e.keyCode === 27 && this.closeMenu();
   }
@@ -95,6 +98,7 @@ class Header extends React.Component {
               bottomDivider && 'has-bottom-divider'
             )}>
             <Logo />
+            <Link to="/contact/" className="button button-primary button-wide-mobile button-sm" onClick={this.closeDropDown}>Contact</Link>
             {!hideNav &&
               <React.Fragment>
                 <button
@@ -121,17 +125,22 @@ class Header extends React.Component {
                         navPosition && `header-nav-${navPosition}`
                       )}>
                       <li>
-                        <Link to="/secondary/" onClick={this.closeMenu}>Secondary page</Link>
+                        <Link to="/" onClick={this.closeMenu}>Home</Link>
+                      </li>
+                      <li>
+                        <Link to="/buying/" onClick={this.closeMenu}>Buying?</Link>
+                      </li>
+                      <li>
+                        <Link to="/selling/" onClick={this.closeMenu}>Selling?</Link>
+                      </li>
+                      <li>
+                        <DropdownButton id="dropdown-basic-button" className='header-dropdown' title="Tools">
+                          <Dropdown.Item href="/mortcostcalc/">Mortgage Cost Calculator</Dropdown.Item>
+                          <Dropdown.Item href="/mortapprovecalc/">Mortgage Approval Calculator</Dropdown.Item>
+                          <Dropdown.Item href="#/action-3">Property Appraisal</Dropdown.Item>
+                        </DropdownButton>
                       </li>
                     </ul>
-                    {!hideSignin &&
-                      <ul
-                        className="list-reset header-nav-right"
-                      >
-                        <li>
-                          <Link to="/signup/" className="button button-primary button-wide-mobile button-sm" onClick={this.closeMenu}>Sign up</Link>
-                        </li>
-                      </ul>}
                   </div>
                 </nav>
               </React.Fragment>}

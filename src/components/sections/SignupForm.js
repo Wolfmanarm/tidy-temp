@@ -18,6 +18,7 @@ class SignupForm extends React.Component {
 
   render() {
 
+
     const {
       className,
       topOuterDivider,
@@ -45,7 +46,7 @@ class SignupForm extends React.Component {
     );
 
     const sectionHeader = {
-      title: 'Welcome. We exist to make entrepreneurship easier.',
+      title: 'Enter your information below and I will contact you ASAP',
     };
 
     return (
@@ -78,20 +79,29 @@ class SignupForm extends React.Component {
                       </div>
                       <div className="mb-12">
                         <Input
-                          type="password"
-                          label="Password"
-                          placeholder="Password"
+                          type="Contact Number"
+                          label="Contact Number"
+                          placeholder="Contact Number"
+                          labelHidden
+                          required />
+                      </div>
+                      <div className="mb-12">
+                        <Input
+                          type="comment"
+                          label="comment"
+                          placeholder="comment"
                           labelHidden
                           required />
                       </div>
                       <div className="mt-24 mb-32">
-                        <Button color="primary" wide>Sign up</Button>
+                        <Button type='submit' color="primary" wide>Contact Now</Button>
                       </div>
                     </fieldset>
                   </form>
                   <div className="signin-bottom has-top-divider">
                     <div className="pt-32 text-xs center-content text-color-low">
-                      Already have an account? <Link to="/login/" className="func-link">Login</Link>
+                      Or call me directly: 
+                      <h2>250-564-4488</h2>
                     </div>
                   </div>
                 </div>
